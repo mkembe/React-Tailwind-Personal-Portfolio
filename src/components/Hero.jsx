@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation';
+import { scrollToSection } from './scrollUtils'
 
 
 const Hero = () => {
@@ -42,7 +43,7 @@ const Hero = () => {
         className='text-base md:max-w-[650px] text-textDark font-medium'>
 
             I am an aspiring Software Engineer with a strong background in visual design and experience in frontend development. My career interests include full-stack development, machine learning, and artificial intelligence. <br />
-            <a href='about'> 
+            <a to="about" onClick={() => scrollToSection('about')}> 
                 <span className='text-textBlue inline-flex relative cursor-pointer h-7 overflow-x-hidden group'>Learn More
                 <span className='absolute w-full h-[1px] bg-textBlue left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500'>
                 </span>

@@ -12,7 +12,7 @@ const AppTeam = () => {
                 <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
                 </span>
-                Participated in App Team Carolina’s Academy program, developing expertise in Swift UI and iOS app development through hands-on learning and practical application 
+                Participated in App Team Carolina’s Academy program, developing expertise in SwiftUI and iOS app development through hands-on learning and practical application 
             </li>
             <li className='text-base flex gap-2 text-textDark'>
               <span className='text-textBlue mt-1'>
