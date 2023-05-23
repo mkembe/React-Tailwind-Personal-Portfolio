@@ -15,7 +15,7 @@ const Projects = () => {
 
           <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
             <div className='flex flex-col xl:flex-row gap-6'>
-              <a className='w-full xl:w-1/2 h-auto relative group' href='' target='_blank'>
+              <a className='w-full xl:w-1/2 h-auto relative group' href='https://github.com/mkembe/React-Tailwind-Personal-Portfolio' target='_blank'>
                 <div>
                   <img className='w-full h-full object-contain hover:-translate-y-3 duration-300' src={Project1} alt='Project1'/>
                 </div>
@@ -42,7 +42,7 @@ const Projects = () => {
 
               </ul>
               <div className='text-2xl flex gap-4'>
-                <a href='' target='_blank' className='hover:text-textBlue duration-300'>
+                <a href='https://github.com/mkembe/React-Tailwind-Personal-Portfolio' target='_blank' className='hover:text-textBlue duration-300'>
                    <TbBrandGithub/> 
                 </a>
               </div>
@@ -53,7 +53,7 @@ const Projects = () => {
 
           <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
             <div className='flex flex-col xl:flex-row-reverse gap-6'>
-              <a className='w-full xl:w-1/2 h-auto relative group' href='' target='_blank'>
+              <a className='w-full xl:w-1/2 h-auto relative group' href='https://github.com/mkembe/s23-academy-todoist-clone-mkembe' target='_blank'>
                 <div>
                   <img className='w-full h-full object-contain hover:-translate-y-3 duration-300' src={Project2} alt='Project1'/>
                 </div>
@@ -90,7 +90,7 @@ const Projects = () => {
 
           <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
             <div className='flex flex-col xl:flex-row gap-6'>
-              <a className='w-full xl:w-1/2 h-auto relative group' href='' target='_blank'>
+              <a className='w-full xl:w-1/2 h-auto relative group' href='https://github.com/mkembe/s23-academy-apple-music-currently-listening-ui-mkembe' target='_blank'>
                 <div>
                   <img className='w-full h-full object-contain hover:-translate-y-3 duration-300' src={Project3} alt='Project1'/>
                 </div>
