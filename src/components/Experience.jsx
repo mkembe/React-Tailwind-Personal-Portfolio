@@ -1,5 +1,5 @@
 import React from 'react'
-import Typed from 'react-typed';
+import { TypeAnimation } from 'react-type-animation';
 import AppTeam from './Experience/AppTeam';
 import { useState } from 'react'
 import BIT from './Experience/BIT';
@@ -36,15 +36,22 @@ const Experience = () => {
             <h2 className='font-titleFont text-2xl font-semibold flex items-center'>
             <span className='text-base md:text-lg text-textBlue mr-2'>
                 02. { " " }
-            </span> <span>My <span> <Typed 
-                strings={[
-                    'Experience',
-                    'Activities'
-                    ]}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    loop 
-            ></Typed>
+            </span> <span>My <span> 
+            <TypeAnimation
+      sequence={[
+        'Experience', 
+        2000,
+        'Activities', 
+        2000, 
+        () => {
+          console.log('Sequence completed'); // Place optional callbacks anywhere in the array
+        }
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: 'text-6xl', display: 'inline-block' }}
+    />
             </span>
             </span>
             <span className='hidden md:inline-flex md:w-60 lgl:w-72 h-[.5px] bg-gray-700 ml-6'> 

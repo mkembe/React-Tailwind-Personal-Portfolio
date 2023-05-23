@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Typed from 'react-typed';
+import { TypeAnimation } from 'react-type-animation';
 
 
 const Hero = () => {
@@ -18,17 +18,23 @@ const Hero = () => {
         >
             Millie Kembe. 
             <span className='text-textDark mt-2 lgl:mt-4'> I'm a <span>
-            <Typed
-                strings={[
-                    'Developer.',
-                    'Designer.',
-                    'Student.']}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    cursorClassName=''
-                    loop 
-                    className='gradient-animation'>
-                </Typed>
+            <TypeAnimation
+      sequence={[
+        'Developer.', // Types 'One'
+        2000, // Waits 1s
+        'Designer.', // Deletes 'One' and types 'Two'
+        2000, // Waits 2s
+        'Student.', 
+        2000, // Types 'Three' without deleting 'Two'
+        () => {
+          console.log('Sequence completed'); // Place optional callbacks anywhere in the array
+        }
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: 'text-6xl', display: 'inline-block' }}
+    />
                 </span>
             </span>
         </motion.h1>
