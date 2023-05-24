@@ -14,7 +14,7 @@ const Hero = () => {
             Hi 👋 My name is
         </motion.h3>
         <motion.h1 initial={{y: 10, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.4}} 
-        className='text-6xl lgl: text:7xl font-titleFont font-semibold flex flex-col'
+        className='text-5xl mdl:text-6xl lgl:text-7xl font-titleFont font-semibold flex flex-col'
         
         >
             Millie Kembe. 
@@ -34,7 +34,7 @@ const Hero = () => {
       wrapper="span"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: 'text-6xl', display: 'inline-block' }}
+      style={{ fontSize: 'text-7xl', display: '' }}
     />
                 </span>
             </span>
