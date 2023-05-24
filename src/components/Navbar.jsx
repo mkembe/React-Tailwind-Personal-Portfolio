@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import logo from '../assets/images/logo.png'
 import { scrollToSection } from './scrollUtils'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import {MdOutlineClose} from 'react-icons/md'
 import { TbBrandGithub } from "react-icons/tb"
 import { SlSocialLinkedin } from "react-icons/sl"
@@ -58,25 +58,36 @@ const Navbar = () => {
     const handleClickHome = () => {
         scrollToSection('home'); 
         handleHome();
+        setShowMenu(false)
     }
     const handleClickAbout = () => {
         scrollToSection('about'); 
         handleAbout();
+        setShowMenu(false)
+
     }
     const handleClickExperience = () => {
         scrollToSection('experience'); 
         handleExperience();
+        setShowMenu(false)
+
     }
     const handleClickProjects = () => {
         scrollToSection('projects'); 
         handleProjects();
+        setShowMenu(false)
+
     }
     const handleClickContact = () => {
         scrollToSection('contact'); 
         handleContact();
+        setShowMenu(false)
+
     }
 
     const [showMenu, setShowMenu] = useState(false); 
+
+
 
     
 
@@ -140,7 +151,9 @@ const Navbar = () => {
                     showMenu && (
                         <div
                             className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end" >
-                                <motion.div initial={{x: 20, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.1}}
+
+                                <motion.div
+                                initial={{x: 20, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.1}}
                                 className='w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240] flex flex-col items-center px-4 py-10 relative'>
                                     <MdOutlineClose
                                     onClick={() => setShowMenu(false)} 
@@ -177,16 +190,24 @@ const Navbar = () => {
                         ? 'flex items-center gap-1 font-medium text-textBlue hover:text-textBlue cursor-pointer duration-300 nav-link'
                         : 'flex items-center gap-1 font-medium text-textDark hover:text-textBlue cursor-pointer duration-300 nav-link' }`}> <span className='text-textBlue'>04.</span> Contact </a> </motion.li>                         
                                         </ul>
-                                        <a href={resume} target='_blank'>
+                                        <a 
+                                        onClick={() =>  setShowMenu(false)
+                                        }
+                                        href={resume} target='_blank'>
                                             <motion.button initial={{x: 20, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{delay: 0.5, duration: 0.2}} className='px-4 py-2 rounded-md text-textBlue text-[13px] border border-textBlue hover:bg-textDark duration-300'>Resume</motion.button>      
                                         </a>
                                         <motion.div className='flex flex-row gap-6'>
-                                        <motion.a initial={{y: 20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.2}}  href="https://github.com/mkembe" target="_blank" className='flex flex-col items-center gap-4'>
+                                        <motion.a 
+                                        onClick={() =>         setShowMenu(false)
+                                        }
+                                        initial={{y: 20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.2}}  href="https://github.com/mkembe" target="_blank" className='flex flex-col items-center gap-4'>
                 <span className='w-10 h-10 text-xl bg-textDark rounded-full inline-flex items-center justify-center hover:bg-textBlue cursor-pointer hover:-translate-y-2 transition-all duration-300'> 
                     <TbBrandGithub/> 
                 </span>
             </motion.a>
-            <motion.a 
+            <motion.a
+            onClick={() =>         setShowMenu(false)
+            } 
             initial={{y: 20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.7, duration: 0.2}}
             href="https://www.linkedin.com/in/millie-kembe-5b828b248/" target="_blank" className='flex flex-col items-center gap-4'>
                 <span className='w-10 h-10 text-xl bg-textDark rounded-full inline-flex items-center justify-center hover:bg-textBlue cursor-pointer hover:-translate-y-2 transition-all duration-300'> 
@@ -195,7 +216,9 @@ const Navbar = () => {
             </motion.a>
                                         </motion.div>
                                 <motion.a 
-                                initial={{y: 20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0., duration: 0.2}}
+                                onClick={() =>         setShowMenu(false)
+                                }
+                                initial={{y: 20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.8, duration: 0.2}}
                                 className='text-sm w-72 tracking-widest text-textBlue text-center mt-4'
                                 href="mailto:mikembe@unc.edu">
                                     <p >

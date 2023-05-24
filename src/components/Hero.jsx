@@ -10,11 +10,11 @@ const Hero = () => {
     id='home'
     className='max-w-[1140px] mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4'>
         
-        <motion.h3 initial={{y: 10, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.3}} className='text-lg font-titleFont tracking-wide text-textBlue'>
+        <motion.h3 initial={{y: 10, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.3}} className='text-md mdl:text-lg font-titleFont tracking-wide text-textBlue'>
             Hi 👋 My name is
         </motion.h3>
         <motion.h1 initial={{y: 10, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.4}} 
-        className='text-5xl mdl:text-6xl lgl:text-7xl font-titleFont font-semibold flex flex-col'
+        className='text-4xl mdl:text-6xl lgl:text-7xl font-titleFont font-semibold flex flex-col'
         
         >
             Millie Kembe. 
