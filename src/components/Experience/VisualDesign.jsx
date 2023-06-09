@@ -19,12 +19,6 @@ const VisualDesign = () => {
                 <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
                 </span>
-                Collaborated with cross-functional teams to design and launch visually impactful websites for 5+ clients, resulting in a 40% increase in website traffic and a 20% decrease in bounce rate.
-            </li>
-            <li className='text-base flex gap-2 text-textDark'>
-                <span className='text-textBlue mt-1'>
-                    <TbCircleArrowRight />
-                </span>
                 Streamlined project management processes by introducing agile methodologies, reducing project completion time by 15% and increasing productivity by 20%.
           </li>
         </ul>
