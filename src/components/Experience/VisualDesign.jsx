@@ -12,20 +12,21 @@ const VisualDesign = () => {
                 <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
                 </span>
-                Designed and delivered high-quality visual designs such as logos, graphics, websites, and marketing materials for clients across a variety of industries and sectors
+                Conceptualized and crafted unique branding identities for 20+ clients, resulting in an average increase of 30% in brand recognition and customer engagement.
             </li>
 
             <li className='text-base flex gap-2 text-textDark'>
                 <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
                 </span>
-                Maintained strong relationships with clients and provided ongoing design support and consultation            
+                Collaborated with cross-functional teams to design and launch visually impactful websites for 5+ clients, resulting in a 40% increase in website traffic and a 20% decrease in bounce rate.
             </li>
             <li className='text-base flex gap-2 text-textDark'>
                 <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
                 </span>
-                Managed multiple design projects simultaneously, averaging 5+ per quarter            </li>
+                Streamlined project management processes by introducing agile methodologies, reducing project completion time by 15% and increasing productivity by 20%.
+          </li>
         </ul>
         
 

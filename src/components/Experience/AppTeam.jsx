@@ -12,13 +12,13 @@ const AppTeam = () => {
                 <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
                 </span>
-                Participated in App Team Carolina’s Academy program, developing expertise in SwiftUI and iOS app development through hands-on learning and practical application 
+                Engaged in App Team Carolina’s Academy program, developing expertise in Swift UI and iOS app development through hands-on learning and practical application. 
             </li>
             <li className='text-base flex gap-2 text-textDark'>
               <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
               </span>
-              Built projects and collaborated with fellow team members to create high-quality iOS apps, gaining experience in project management, teamwork, and problem-solving            
+              Developed 10+ fully functional iOS applications implementing best practices for app development using Swift UI, resulting in a 98% instructor approval rate. 
             </li>
         </ul>
         

@@ -1,9 +1,9 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
 import { FaJava, FaPython } from 'react-icons/fa'
-import { SiJavascript, SiSwift } from 'react-icons/si'
+import { SiAxios, SiExpress, SiFirebase, SiJavascript, SiSwift } from 'react-icons/si'
 import { SiTailwindcss } from 'react-icons/si'
-import { DiCss3, DiHtml5 } from 'react-icons/di'
+import { DiCss3, DiFirebase, DiHtml5 } from 'react-icons/di'
 import { FaReact } from 'react-icons/fa'
 import { DiSwift } from 'react-icons/di'
 import { FaUnity } from 'react-icons/fa'
@@ -30,7 +30,7 @@ const About = () => {
                     Fast forward to today, I've had the privilege of working on numerous professional Graphic and Web Design projects as a Freelance Visual Designer, immersing myself in app development and
                     building iOS applications as part of <span className='text-textBlue'> App Team Carolina,</span> and continuing to explore the world of Computer Science through some personal projects. 
 
-                I've also had the privilege of serving on the Executive Board of <span className='text-textBlue'>Black in Tech</span> where I've been able to 
+                I've also had the privilege of serving on the Executive Board of <span className='text-textBlue'>Black in Technology</span> where I am able to 
                 work towards the development of intensive programs for increasing Black and other ethnic participation in the field of technology and Computer Science.
                 </p>
 
@@ -50,6 +50,13 @@ const About = () => {
                     <li className='flex items-center gap-2'> <span className='text-textBlue'> <DiCode/> </span> C </li>
                     <li className='flex items-center gap-2'> <span className='text-textBlue'> <DiCode/> </span> C# </li>
                     <li className='flex items-center gap-2'> <span className='text-textBlue'> <DiCode/> </span> C++ </li>
+                    <li className='flex items-center gap-2'> <span className='text-textBlue'> <SiFirebase/> </span> Firebase </li>
+                    <li className='flex items-center gap-2'> <span className='text-textBlue'> <SiExpress/> </span> Express </li>
+                    <li className='flex items-center gap-2'> <span className='text-textBlue'> <SiAxios/> </span> Axios </li>
+
+
+
+
 
 
 

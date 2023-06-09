@@ -5,7 +5,7 @@ import { TbCircleArrowRight, TbFileArrowRight } from 'react-icons/tb'
 const BIT = () => {
   return (
     <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.1}} className='w-full'>
-        <h3 className='flex gap-1 font-medium text-xl font-titleFont'> Programming Co-Chair <span className='text-textBlue tracking-wide'>@BlackInTech</span></h3>
+        <h3 className='flex gap-1 font-medium text-xl font-titleFont'> Programming Co-Chair <span className='text-textBlue tracking-wide'>@BlackInTechnology</span></h3>
         <p className='text-sm mt-1 font-medium text-textDark'> May 2023 - Present </p>
         <ul className='mt-6 flex flex-col gap-3'>
             <li className='text-base flex gap-2 text-textDark'>
