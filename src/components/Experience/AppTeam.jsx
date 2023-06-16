@@ -18,8 +18,8 @@ const AppTeam = () => {
               <span className='text-textBlue mt-1'>
                     <TbCircleArrowRight />
               </span>
-              Developed 10+ fully functional iOS applications implementing best practices for app development using Swift UI, resulting in a 98% instructor approval rate. 
-            </li>
+              Developed 10+ fully functional iOS applications implementing best practices for app development using Swift UI,
+resulting in a 98% instructor approval rate for the program’s iOS development projects.            </li>
         </ul>
         
 
