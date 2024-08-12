@@ -5,7 +5,10 @@
 
   @font-face {
     font-family: 'Inter';
-    src: url('./Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    src: url('./Inter-VariableFontslnt,wght.ttf') format('truetype');  
+  }
 
-    
+  @font-face {
+    font-family: 'Avory';
+    src: url(https://fonts.adobe.com/fonts/avory-pe-variable) format('truetype');
   }

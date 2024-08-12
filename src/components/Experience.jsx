@@ -4,9 +4,12 @@ import AppTeam from './Experience/AppTeam';
 import { useState } from 'react'
 import BIT from './Experience/BIT';
 import VisualDesign from './Experience/VisualDesign';
+import Microsoft from './Experience/Microsoft';
 
 const Experience = () => {
-    const [workAppTeam, setWorkAppTeam] = useState(true);
+
+    const [workMicrosoft, setWorkMicrosoft] = useState(true);
+    const [workAppTeam, setWorkAppTeam] = useState(false);
     const [workBIT, setWorkBIT] = useState(false);
     const [workTarg, setWorkTarg] = useState(false);
 
@@ -14,22 +17,29 @@ const Experience = () => {
         setWorkAppTeam(true);
         setWorkBIT(false);
         setWorkTarg(false);
+        setWorkMicrosoft(false);
     }
 
     const handleBIT = () => {
         setWorkAppTeam(false);
         setWorkBIT(true);
         setWorkTarg(false);
+        setWorkMicrosoft(false);
     }
 
     const handleTarg = () => {
         setWorkAppTeam(false);
         setWorkBIT(false);
         setWorkTarg(true);
+        setWorkMicrosoft(false);
     }
 
-
-
+    const handleMicrosoft = () => {
+        setWorkAppTeam(false);
+        setWorkBIT(false);
+        setWorkTarg(false);
+        setWorkMicrosoft(true); 
+    }
 
   return (
     <section id="experience" className='max-w-[768px] mx-auto py-10 lgl:py-24 px-4'>
@@ -61,14 +71,13 @@ const Experience = () => {
     </h2>
         <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
             <ul className='md:w-32 flex flex-col'>
+                <li onClick={handleMicrosoft} className={`${workMicrosoft ? "border-l-textBlue text-textBlue" : "border-l-textDark text-textDark"} border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}>Microsoft</li>
                 <li onClick={handleAppTeam} className={`${workAppTeam ? "border-l-textBlue text-textBlue" : "border-l-textDark text-textDark"} border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}>App Team Carolina</li>
                 <li onClick={handleBIT} className={`${workBIT ? "border-l-textBlue text-textBlue" : "border-l-textDark text-textDark"} border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}>Black in Technology</li>
                 <li onClick={handleTarg} className={`${workTarg ? "border-l-textBlue text-textBlue" : "border-l-textDark text-textDark"} border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}>Freelance Visual Design</li>
 
-
-
-
             </ul>
+            {workMicrosoft && <Microsoft/>}
             {workAppTeam && <AppTeam />}
             {workBIT && <BIT />}
             {workTarg && <VisualDesign />}

@@ -4,9 +4,11 @@ import Project1 from '../assets/images/Projects/Project1.png'
 import Project2 from '../assets/images/Projects/Project2.png'
 import Project3 from '../assets/images/Projects/Project3.png'
 
+
 import { TbBrandGithub } from "react-icons/tb"
 
 const Projects = () => {
+
   return (
     <section id="projects" className='max-w-[1440px] mx-auto lgl:px-20 py-24'>
         <SectionTitle title='Some of my projects' titleNumber='03'/>
@@ -93,6 +95,7 @@ const Projects = () => {
               <a className='w-full xl:w-1/2 h-auto relative group' href='https://github.com/mkembe/s23-academy-apple-music-currently-listening-ui-mkembe' target='_blank'>
                 <div>
                   <img className='w-full h-full object-contain hover:-translate-y-3 duration-300' src={Project3} alt='Project1'/>
+
                 </div>
               </a>
               <div className='w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10'> 
@@ -101,21 +104,29 @@ const Projects = () => {
                 Featured Project
               </p>
               <h3 className='text-2xl font-bold'>
-                Apple Music UI Clone
+                MixMatch
               </h3>
               </div>
               <p className='bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md'>
-                A clone of Apple Music's currently playing view UI built from scratch with SwiftUI utilizing a mix of custom icons and icons from SF Symbols. 
+                A music-based social networking application that allows users to see what their friends are listening to and get song recommendations based on popular music within a user's network.
+
+
               </p>
               <ul className='text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark'>
-                <li className='hover:text-textBlue cursor-default'> Swift </li>
-                <li className='hover:text-textBlue cursor-default'> Xcode </li>
-                <li className='hover:text-textBlue cursor-default'> SF Symbols </li>
+                <li className='hover:text-textBlue cursor-default'> React </li>
+                <li className='hover:text-textBlue cursor-default'> Tailwind CSS </li>
+                <li className='hover:text-textBlue cursor-default'> Firebase </li>
+                <li className='hover:text-textBlue cursor-default'> Spotify Web API Node </li>
+                <li className='hover:text-textBlue cursor-default'> ExpressJS </li>
+                <li className='hover:text-textBlue cursor-default'> Axios </li>
+
+
+
 
 
               </ul>
               <div className='text-2xl flex gap-4'>
-                <a href='https://github.com/mkembe/s23-academy-apple-music-currently-listening-ui-mkembe' target='_blank' className='hover:text-textBlue duration-300'>
+                <a href='https://github.com/mkembe/Mix-Match' target='_blank' className='hover:text-textBlue duration-300'>
                    <TbBrandGithub/> 
                 </a>
               </div>

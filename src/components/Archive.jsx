@@ -19,23 +19,17 @@ const Archive = () => {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
             
-            <ArchiveCard title="MixMatch" description="MixMatch is a music-based social networking application that allows users to see what their friends are listening to and get song recommendations based on popular music within a user's network." listItem={["React", "Express", "Axios", "Spotify Web API", "Firebase"]} link="https://github.com/mkembe/Mix-Match"/>
             <ArchiveCard title="Pokey" description="Pokey is an interactive iOS app that uses API calls to display every Pokemon character and tracks their evolutions." listItem={["Swift", "Xcode", "SF Symbols"]} link="https://github.com/mkembe/s23-academy-pokey-mkembe"/>
             <ArchiveCard title="Moonshot" description="Moonshot is an interactive iOS app that uses API calls to display information about astronauts on each of the Apollo missions." listItem={["Swift", "Xcode", "SF Symbols"]} link="https://github.com/mkembe/s23-academy-moonshot-mkembe"/>
             <ArchiveCard title="Contagion Simulation" description="This is a simulation inspired by a Washington Post article's graphical visualization of infectious cells." listItem={["Python"]} link="https://github.com/mkembe/contagion-simulation"/>
             <ArchiveCard title="Liftey" description="Liftey is an iOS app that allows users to create workouts and keep of track sets, reps, and weights for each workout." listItem={["Swift", "Xcode", "SF Symbols"]} link="https://github.com/mkembe/s23-academy-liftey-mkembe"/>
             <ArchiveCard title="WeSplit" description="WeSplit is an iOS app that calculates a bill for each person when a bill is split amongst multiple people. The calculation factors in tip percentages and the number of people paying a bill." listItem={["Swift", "Xcode", "SF Symbols"]} link="https://github.com/mkembe/s23-academy-wesplit-mkembe"/>
+            <ArchiveCard title="Emojiey" description="Emojiey is an iOS app that allows you to browse the library of Apple emojis and search for emojis by name." listItem={["Swift", "Xcode", "SF Symbols"]} link="https://github.com/mkembe/s23-academy-emojiey-mkembe"/>
+
             {
                 showMore && (
                     <>
-                                                <motion.div
-                        initial={{ opacity: 0}}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.1 }}
-                        >
-                         <ArchiveCard title="Emojiey" description="Emojiey is an iOS app that allows you to browse the library of Apple emojis and search for emojis by name." listItem={["Swift", "Xcode", "SF Symbols"]} link="https://github.com/mkembe/s23-academy-emojiey-mkembe"/>
-
-                        </motion.div>
+ 
                         <motion.div
                         initial={{ opacity: 0}}
                         whileInView={{ opacity: 1 }}

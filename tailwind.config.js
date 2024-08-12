@@ -21,13 +21,14 @@ export default {
       fontFamily: {
         bodyFont: ["Montserrat", "sans-serif"],
         titleFont: ["Inter", "sans-serif"],
+        avory: ["Avory", "sans-serif"]
       },
       colors: {
-        bodyColor: "#071013",
-        textBlue: "#BBD1EA",
-        textLight: "#DAE3E5", 
-        textDark: "#507DBC",
-        hoverColor: "#A1C6EA",
+        bodyColor: "#000814",
+        textBlue: "#fca311",
+        textLight: "#ffffff", 
+        textDark: "#DBDBDB",
+        hoverColor: "#14213d",
       }
     },
   },
